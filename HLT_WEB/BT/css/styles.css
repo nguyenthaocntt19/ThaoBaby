@@ -1,0 +1,68 @@
+body{
+    background-color:burlywood;
+}
+h1{
+    background-color: aqua;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2{
+    
+    font-size: 30;
+    vertical-align: middle;
+}
+text{
+    text-align: right;
+}
+
+.boder{
+    background-color: aqua;
+    height: 90px;
+
+}
+
+.conten{
+    background-color: aliceblue;
+    height: 600px;
+}
+
+
+
+.menu{
+    background-color: dimgrey;
+    float:left;
+    width: 15%;
+    height: 600px;
+}
+
+
+
+.right{
+    background-color: rgb(143, 90, 11);
+    float: right;
+    width: 20%;
+    height: 600px;
+}
+
+
+
+.heder{
+    background-color: blueviolet;
+    height: 50px;
+}
+
+.menu Text{
+    font-size: 100;
+    vertical-align: middle;
+}
+
+.xenter span{
+    font-size: 50px ;color: cornflowerblue;
+    
+}
+
+.right span{
+    font-size: 30px;
+    color: cadetblue;
+}

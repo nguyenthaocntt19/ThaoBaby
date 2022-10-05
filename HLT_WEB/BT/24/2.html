@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thảo</title>
+    
+
+    </script>
+        <script type="text/javascript">
+            function disp_Prompt()
+        {
+            var name = prompt("Vui lòng nhập vào số từ 1 đến 9")
+            parseInt(name)
+            if(name != null && name != "" && name >= 1 && name <= 9)
+            {
+                // for(i=0;i<=100;i++){
+             
+                //    if( name % i === 0){
+                //     document.write("Số bạn chọn là " + name + " số chia hết là" );
+                //    }
+                // }
+                a = name * 2
+                b = name * 3
+                document.write("Số bạn chọn là: " + name + "       ") 
+                document.write("số chia hết cho " + name + "là: " + a +"  " + b )
+                
+            }
+            else
+            document.write("lêu lêu mầy nhập sai rồi kìa")
+            
+
+        }
+        </script>
+
+</head>
+<body>
+    <form>
+        <input type = "button" onclick="disp_Prompt()" value = "Nhập số"/>
+    </form>
+   
+
+</body>
+</html>

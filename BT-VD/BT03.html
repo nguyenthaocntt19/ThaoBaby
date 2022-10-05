@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="">
+            <header id="header" class="d-flex align-items-end pt-1">
+                <span class="text-bold font-30">Anime</span>
+            </header>
+        </section>
+
+        <section>
+            <div class="d-flex  border-top border-bottom" id="content h-80">
+                <div class="d-flex flex-column col-2 bg-white border-right text-center overflow-scroll"
+                    style="max-height: 640px; margin: 0.5rem 0;">
+                    <div>
+                        <img class="image-small" src="https://img5.thuthuatphanmem.vn/uploads/2021/11/12/hinh-anh-anime-don-gian-hinh-nen-anime-don-gian-ma-dep_092443354.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img class="image-small" src="https://o.rada.vn/data/image/2021/11/24/hinh-nen-anime-cho-may-tinh-6.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img class="image-small" src="https://toigingiuvedep.vn/wp-content/uploads/2021/09/hinh-anh-anime-nam-dep-trai-soai-ca-cute-nhat.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img class="image-small" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/01/Hinh-anh-anime-cute-dep-de-thuong-lam-tan-chay.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <img class="image-small" src="https://toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-anime-cute.jpg" alt="" srcset="">
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-10 d-flex">
+
+                    <img src="" alt="" class="image-scale" srcset="">
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <footer class="" id="footer">
+                <p>© Dong Thap University</p>
+            </footer>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(() => {
+            // Thêm src của ảnh đầu tiên
+            $('.image-scale').attr('src', $("img").first().attr('src'))
+
+            // Gắn sự kiện click cho toàn thẻ img
+            $("img").on('click', (e) => {
+                $('.image-scale').attr('src', e.target.src);
+            })
+        })
+    </script>
+</body>
+
+</html>
